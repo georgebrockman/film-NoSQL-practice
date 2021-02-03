@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 
 // connect to mongob change this to new mongo
-const dbURI = 'mongodb+srv://netninja:netninjaautoenhance1@cluster0.lhtji.mongodb.net/Cluster0?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://username:password@cluster0.lhtji.mongodb.net/Cluster0?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
